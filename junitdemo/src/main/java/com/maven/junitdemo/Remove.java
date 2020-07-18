@@ -2,42 +2,42 @@ package com.maven.junitdemo;
 
 public class Remove {
 
-	public String modify(String a) {
+	public String modify(String s) {
 		
-		String result=a;
-        if(a.length()>1)
+		String res=s;
+        if(s.length()>1)
         {
-        if(a.charAt(0)=='A' && a.charAt(1)=='A')
+        if(s.charAt(0)=='A' && s.charAt(1)=='A')
         {
-            result=a.substring(2,a.length());
+            res=s.substring(2,s.length());
         }      
-        else if(a.charAt(0)=='A')
+        else if(s.charAt(0)=='A')
         {
-            result=a.substring(1,a.length());
+            res=s.substring(1,s.length());
         }
-        else if(a.charAt(1)=='A')
+        else if(s.charAt(1)=='A')
         {
-            result=a.charAt(0)+a.substring(2,a.length());
+            res=s.charAt(0)+s.substring(2,s.length());
         }
         else
         {
-        result=a;
+        res=s;
         }
         
         }
         else
         {
-        	if(a.charAt(0)=='A') {
-        		result="";
+        	if(s.charAt(0)=='A') {
+        		res="";
         	}
         	else
         	{
-        		result=a;
+        		res=s;
         	}
         }
 
-		return result;
-		// TODO Auto-generated method stub
+		return res;
+		
 		
 	}
 
